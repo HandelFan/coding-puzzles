@@ -93,10 +93,17 @@ public class Solution
         }
         return clone;
     }
-}
+    public static void Main(string[] args)
+    {
+        int test_case_number = 0;
+        bool Check(Node inputRoot, Node outputRoot) {
+            if(inputRoot == outputRoot || inputRoot.val != outputRoot.val) {
+                Console.WriteLine("Incorrect, Test #" + test_case_number);
+            }
 
-[TestClass]
-public class TestingSolution
-{
-
+            foreach (Node neighbor in inputRoot.neighbors) {
+                Check()
+            }
+        }
+    }
 }
